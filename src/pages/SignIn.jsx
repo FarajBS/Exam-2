@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
@@ -105,6 +106,9 @@ export default function SignIn() {
                     {/* Login */}
                     <div className="w-full text-3xl mb-3 p-2">
                         <button className="btn btn-neutral w-full text-3xl" onClick={signIn}>Login</button>
+                    </div>
+                    <div>
+                        <Link to="/signUp">Sign Up</Link>
                     </div>
                     {/*=== Login ===*/}
 

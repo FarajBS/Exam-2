@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 export default function SignUp() {
@@ -144,6 +145,8 @@ export default function SignUp() {
                     <div className="w-full text-3xl mb-3 p-2">
                         <button className="btn btn-neutral w-full text-3xl" onClick={signUp}>Register</button>
                     </div>
+                    <Link to="/signIn">Sign In</Link>
+
                     {/*=== Register ===*/}
 
                 </div>
